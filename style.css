@@ -1,0 +1,61 @@
+:root {
+    --hero_text: white;
+}
+
+body {
+    background-image: url(./images/hero_mob.webp);
+    margin: 0 auto;
+
+}
+
+header {
+    display: flex;
+    margin: 0 auto;
+    color: var(--hero_text);
+    height: 173px;
+    width: 320px;
+    flex-direction: column-reverse;
+    justify-content: start;
+    padding-top: 19px;
+    text-align: center;
+
+}
+
+.sign_up {
+    border: 2px var(--hero_text) solid;
+    border-radius: 50px;
+    
+
+}
+
+.logo {
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header button {
+    color: var(--hero_text);
+    height: 39px;
+    width: 92px;
+    background: none;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    margin-bottom: 110px;
+
+}
+
+.hero{
+    margin-bottom: 138px;
+    height: 180px;
+    color: var(--hero_text);
+    text-align: center;
+}
+.hero h2{
+    font-size: 30px;
+}
+
+.partners{
+    background-color: var(--hero_text);
+}
