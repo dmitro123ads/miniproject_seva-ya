@@ -84,7 +84,7 @@ header button {
     justify-items: center;
     height: 1053px;
     padding-top: 46px;
-
+    
 }
 
 .partners h2 {
@@ -93,24 +93,28 @@ header button {
 }
 
 .partner {
+    justify-self: center;
     width: 194px;
     height: 201px;
     margin-bottom: 27px;
 }
 
 .partner2 {
+    justify-self: center;
     width: 232px;
     height: 235px;
     margin-bottom: 27px;
 }
 
 .partner3 {
+    justify-self: center;
     width: 211px;
     height: 204px;
     margin-bottom: 21px;
 }
 
 .partner4 {
+    justify-self: center;
     width: 194px;
     height: 206px;
     margin-bottom: 29px;
