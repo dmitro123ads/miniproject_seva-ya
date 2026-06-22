@@ -2,6 +2,10 @@
     --hero_text: white;
     --hero_butn: #FF4E50;
     --partners_butn: #FFA507;
+    --guides_butn:#4E73DB;
+    --love_us_butn: #1CD7AD;
+    --footer-back: #666666;
+    --quick_links: #D23166;
 }
 
 body {
@@ -136,7 +140,7 @@ header button {
     background-color: var(--hero_text);
     text-align: center;
     justify-items: center;
-    height: 1053px;
+    height: 483px;
     padding-top: 46px;
 
 
@@ -146,7 +150,7 @@ header button {
     list-style: none;
     padding: 0;
     justify-items: center;
-    height: 368px;  
+    height: 328px;  
    width: 277px;
 }   
 
@@ -173,9 +177,83 @@ header button {
 
 .guides_but {
     background: none;
-    border: 2px var(--partners_butn) solid;
-    color: var(--partners_butn);
+    border: 2px var(--guides_butn) solid;
+    color: var(--guides_butn);
     height: 40px;
     width: 280px;
     border-radius: 50px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.love_us{
+    background-color: var(--hero_text);
+    text-align: center;
+    justify-items: center;
+    height: 483px;
+    padding: 30px;
+}
+.love_us h2{
+    margin: 0 auto;
+    margin-bottom: 23px;
+}
+.love_us h3{
+    margin: 0 auto;
+    margin-bottom: 7px;
+}
+.love_us p{
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.love_us_but{
+    background: none;
+    border: 2px var(--love_us_butn) solid;
+    color: var(--love_us_butn);
+    height: 40px;
+    width: 280px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.pre_footer{
+    background-color: var(--hero_text);
+    text-align: center;
+    justify-items: center;
+    height: 600px;
+    width: 277px;
+    padding: 22px;
+}
+.pre_footer ul{
+    list-style: none;
+    padding: 0;
+    justify-items: center;
+    
+}
+.pre_footer li{
+    margin-bottom: 8px;
+}
+.pre_footer p{
+    color: var(--partners_butn);
+}
+footer{
+    height: 28px;
+    background-color: var(--footer-back);
+    padding-top: 4px;
+}
+footer h2{
+    font-weight: medium;
+    font-size: 14px;
+    margin: 0 auto;
+    justify-self: center;
+    color: var(--hero_text);
+    margin: 4px;
+}
+.quick_links{
+    color: var(--quick_links);
+}
+.follow_us{
+    color: var(--love_us_butn);
+}
+.support{
+    color: var(--guides_butn);
 }
