@@ -2,24 +2,26 @@
     --hero_text: white;
     --hero_butn: #FF4E50;
     --partners_butn: #FFA507;
-    --guides_butn:#4E73DB;
+    --guides_butn: #4E73DB;
     --love_us_butn: #1CD7AD;
     --footer-back: #666666;
     --quick_links: #D23166;
 }
 
 body {
-    background-image: url(./images/hero_mob.webp);
+
     margin: 0 auto;
 
 }
 
 header {
-
+    background-image: url(./images/hero_mob.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0 auto;
     color: var(--hero_text);
     height: 490px;
-    width: 320px;
+    width: 100%;
 
     justify-content: start;
     padding-top: 19px;
@@ -148,11 +150,11 @@ header button {
 
 .guides ul {
     list-style: none;
-    padding: 0;
+    padding: 0px 40px;
     justify-items: center;
-    height: 328px;  
-   width: 277px;
-}   
+
+    
+}
 
 .guides h2 {
     margin: 0px 22px 16px 22px;
@@ -185,26 +187,31 @@ header button {
     font-weight: bold;
     font-size: 14px;
 }
-.love_us{
+
+.love_us {
     background-color: var(--hero_text);
     text-align: center;
     justify-items: center;
     height: 483px;
     padding: 30px;
 }
-.love_us h2{
+
+.love_us h2 {
     margin: 0 auto;
     margin-bottom: 23px;
 }
-.love_us h3{
+
+.love_us h3 {
     margin: 0 auto;
     margin-bottom: 7px;
 }
-.love_us p{
+
+.love_us p {
     margin: 0 auto;
     margin-bottom: 20px;
 }
-.love_us_but{
+
+.love_us_but {
     background: none;
     border: 2px var(--love_us_butn) solid;
     color: var(--love_us_butn);
@@ -215,32 +222,39 @@ header button {
     font-size: 14px;
     margin-top: 10px;
 }
-.pre_footer{
+
+.pre_footer {
     background-color: var(--hero_text);
     text-align: center;
     justify-items: center;
     height: 600px;
     width: 277px;
     padding: 22px;
+    margin: 0 auto;
 }
-.pre_footer ul{
+
+.pre_footer ul {
     list-style: none;
     padding: 0;
     justify-items: center;
-    
+
 }
-.pre_footer li{
+
+.pre_footer li {
     margin-bottom: 8px;
 }
-.pre_footer p{
+
+.pre_footer p {
     color: var(--partners_butn);
 }
-footer{
+
+footer {
     height: 28px;
     background-color: var(--footer-back);
     padding-top: 4px;
 }
-footer h2{
+
+footer h2 {
     font-weight: medium;
     font-size: 14px;
     margin: 0 auto;
@@ -248,12 +262,62 @@ footer h2{
     color: var(--hero_text);
     margin: 4px;
 }
-.quick_links{
+
+.quick_links {
     color: var(--quick_links);
 }
-.follow_us{
+
+.follow_us {
     color: var(--love_us_butn);
 }
-.support{
+
+.support {
     color: var(--guides_butn);
+}
+
+.holidays {
+    width: 100%;
+    height: 186px;
+}
+
+.holidays img {
+    object-fit: cover;
+    width: 100%;
+    height: 186px;
+}
+
+@media (min-width: 768px) {
+    .grid_partners {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .partners_but {
+        margin-top: 50px;
+    }
+
+    .partners {
+        height: 648px;
+    }
+
+    .guides {
+        background-color: var(--hero_text);
+        text-align: center;
+        justify-items: center;
+        height: 483px;
+        padding-top: 46px;
+
+
+    }
+
+    .guides ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-top: 41px;
+        margin-bottom: 48px;
+    }
+    .guides li{
+        width: 210px;
+    }
 }
