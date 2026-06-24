@@ -6,6 +6,8 @@
     --love_us_butn: #1CD7AD;
     --footer-back: #666666;
     --quick_links: #D23166;
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
 }
 
 body {
@@ -13,7 +15,15 @@ body {
     margin: 0 auto;
 
 }
-
+h2{
+    font-family: var(--font-montserrat);
+}
+h3{
+    font-family: var(--font-montserrat);
+}
+p{
+    font-family: var(--font-roboto);
+}
 header {
     background-image: url(./images/hero_mob.webp);
     background-repeat: no-repeat;
@@ -45,6 +55,7 @@ header {
     margin: 0 auto;
     font-size: 18px;
     font-weight: bold;
+    font-family: var(--font-montserrat);
 }
 
 header button {
@@ -56,6 +67,7 @@ header button {
     font-size: 14px;
     border: none;
     margin-bottom: 110px;
+    font-family: var(--font-montserrat);
 
 }
 
@@ -64,10 +76,18 @@ header button {
     height: 180px;
     color: var(--hero_text);
     text-align: center;
+    font-family: var(--font-montserrat);
 }
 
 .hero h2 {
     font-size: 30px;
+}
+.hero p{
+    font-family: var(--font-roboto);
+    font-weight: 200;
+    font-size: 18px;
+    padding: 0px 38px;
+    margin-bottom: 0px;
 }
 
 .find_partner {
@@ -84,7 +104,7 @@ header button {
     justify-items: center;
     height: 1053px;
     padding-top: 46px;
-    
+
 }
 
 .partners h2 {
@@ -140,6 +160,7 @@ header button {
     border-radius: 50px;
     font-weight: bold;
     font-size: 14px;
+    font-family: var(--font-montserrat);
 }
 
 .guides {
@@ -157,7 +178,7 @@ header button {
     padding: 0px 40px;
     justify-items: center;
 
-    
+
 }
 
 .guides h2 {
@@ -175,7 +196,7 @@ header button {
 
 .guides p {
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 200;
     margin-top: 2px;
     margin-bottom: 20px;
     line-height: 20px;
@@ -190,6 +211,7 @@ header button {
     border-radius: 50px;
     font-weight: bold;
     font-size: 14px;
+    font-family: var(--font-montserrat);
 }
 
 .love_us {
@@ -203,16 +225,20 @@ header button {
 .love_us h2 {
     margin: 0 auto;
     margin-bottom: 23px;
+    font-size: 22px;
 }
 
 .love_us h3 {
     margin: 0 auto;
     margin-bottom: 7px;
+    font-size: 14px;
 }
 
 .love_us p {
     margin: 0 auto;
     margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 200;
 }
 
 .love_us_but {
@@ -225,6 +251,7 @@ header button {
     font-weight: bold;
     font-size: 14px;
     margin-top: 10px;
+    font-family: var(--font-montserrat);
 }
 
 .pre_footer {
@@ -246,20 +273,23 @@ header button {
 
 .pre_footer li {
     margin-bottom: 8px;
+    font-family: var(--font-roboto);
+    font-weight: 200;
 }
 
 .pre_footer p {
     color: var(--partners_butn);
+    font-weight: 200;
 }
 
-footer {
+.footer_end {
     height: 28px;
     background-color: var(--footer-back);
     padding-top: 4px;
 }
 
-footer h2 {
-    font-weight: medium;
+.footer_end h2 {
+    font-weight: 400;
     font-size: 14px;
     margin: 0 auto;
     justify-self: center;
@@ -298,6 +328,7 @@ footer h2 {
 
     .partners_but {
         margin-top: 50px;
+        width: 195px;
     }
 
     .partners {
@@ -321,7 +352,51 @@ footer h2 {
         margin-top: 41px;
         margin-bottom: 48px;
     }
-    .guides li{
+
+    .guides li {
         width: 210px;
     }
+    .guides_but{
+    width: 195px;
+    }
+
+    .love_us {
+    background-color: var(--hero_text);
+    text-align: center;
+    justify-items: center;
+    height: 373px;
+    padding: 30px;
+}
+
+    .love_articles {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-top: 41px;
+        margin-bottom: 28px;
+    }
+
+
+    .love_us_but {
+        background: none;
+        border: 2px var(--love_us_butn) solid;
+        color: var(--love_us_butn);
+        height: 40px;
+        width: 195px;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .holidays {
+    width: 100%;
+    height: 349px;
+}
+
+.holidays img {
+    object-fit: cover;
+    width: 100%;
+    height: 349px;
+}
 }
