@@ -15,15 +15,19 @@ body {
     margin: 0 auto;
 
 }
-h2{
+
+h2 {
     font-family: var(--font-montserrat);
 }
-h3{
+
+h3 {
     font-family: var(--font-montserrat);
 }
-p{
+
+p {
     font-family: var(--font-roboto);
 }
+
 header {
     background-image: url(./images/hero_mob.webp);
     background-repeat: no-repeat;
@@ -82,7 +86,8 @@ header button {
 .hero h2 {
     font-size: 30px;
 }
-.hero p{
+
+.hero p {
     font-family: var(--font-roboto);
     font-weight: 200;
     font-size: 18px;
@@ -258,10 +263,9 @@ header button {
     background-color: var(--hero_text);
     text-align: center;
     justify-items: center;
-    height: 600px;
-    width: 277px;
-    padding: 22px;
-    margin: 0 auto;
+    padding: 22px 0px 0px 0px;
+    margin: 0px 22px;
+
 }
 
 .pre_footer ul {
@@ -280,6 +284,22 @@ header button {
 .pre_footer p {
     color: var(--partners_butn);
     font-weight: 200;
+}
+
+.footer_grid h2 {
+    display: flex;
+    margin: 0 auto;
+    justify-self: center;
+
+}
+
+.footer_grid h3 {
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.footer_grid ul {
+    margin: 0 auto;
 }
 
 .footer_end {
@@ -356,17 +376,18 @@ header button {
     .guides li {
         width: 210px;
     }
-    .guides_but{
-    width: 195px;
+
+    .guides_but {
+        width: 195px;
     }
 
     .love_us {
-    background-color: var(--hero_text);
-    text-align: center;
-    justify-items: center;
-    height: 373px;
-    padding: 30px;
-}
+        background-color: var(--hero_text);
+        text-align: center;
+        justify-items: center;
+        height: 373px;
+        padding: 30px;
+    }
 
     .love_articles {
         display: grid;
@@ -390,13 +411,36 @@ header button {
     }
 
     .holidays {
-    width: 100%;
-    height: 349px;
-}
+        width: 100%;
+        height: 349px;
+    }
 
-.holidays img {
-    object-fit: cover;
-    width: 100%;
-    height: 349px;
-}
+    .holidays img {
+        object-fit: cover;
+        width: 100%;
+        height: 349px;
+    }
+
+    .footer_grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .footer_grid h2 {
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .footer_grid h3 {
+        margin: 0 auto;
+    }
+
+    .pre_footer {
+        grid-column: auto;
+        text-align: center;
+        margin: 16px 96px;
+        margin-top: 60px;
+    }
 }
