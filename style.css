@@ -36,13 +36,16 @@ header {
     color: var(--hero_text);
     height: 490px;
     width: 100%;
-
+    
     justify-content: start;
     padding-top: 19px;
     text-align: center;
 
 }
-
+nav{
+    display: flex;
+    flex-direction: column-reverse;
+}
 .header1part {
     flex-direction: column-reverse;
     display: flex;
@@ -83,11 +86,11 @@ header button {
     font-family: var(--font-montserrat);
 }
 
-.hero h2 {
+.hero-title {
     font-size: 30px;
 }
 
-.hero p {
+.hero-text {
     font-family: var(--font-roboto);
     font-weight: 200;
     font-size: 18px;
@@ -178,7 +181,7 @@ header button {
 
 }
 
-.guides ul {
+.guide-container {
     list-style: none;
     padding: 0px 40px;
     justify-items: center;
@@ -365,7 +368,7 @@ header button {
 
     }
 
-    .guides ul {
+    .guide-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -443,4 +446,162 @@ header button {
         margin: 16px 96px;
         margin-top: 60px;
     }
+}
+
+@media (min-width: 1024px) {
+    header {
+        background-image: url(images/header.webp);
+        background-size: cover;
+        height: 702px;
+    }
+
+    nav {
+        flex-direction: row;
+        display: flex;
+        margin:0px 190px;
+        height: 39px;
+        
+    }
+
+    .logo {
+        color: var(--hero_text);
+        font-size: 20px;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        height: 24px;
+        margin: auto;
+        margin-left: 0px;
+    }
+
+    .header-btn {
+        font-size: 14px;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        color: var(--header-color);
+        padding-right: 9px;
+        margin: auto 0;
+    }
+
+    .sing-up {
+        font-size: 14px;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        color: var(--header-color);
+        border: 2px solid var(--header-color);
+        border-radius: 20px;
+        margin: auto 0;
+        padding: 5px;
+    }
+
+    .hero {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 290px;
+        flex-direction: column;
+        width: 580px;
+        margin: 0 auto;
+        margin-top: 130px;
+    }
+
+    .hero-title {
+        font-size: 52px;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        color: var(--header-color);
+        text-transform: uppercase;
+        
+    }
+
+    .hero-text {
+        font-size: 24px;
+        font-weight: 300;
+        font-family: 'Roboto', sans-serif;
+        color: var(--header-color);
+        padding-bottom: 26px;
+        margin-top: 0px;
+    }
+
+    .find_partner {
+        font-size: 14px;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        border-radius: 20px;
+        background-color: var(--hero_butn);
+        padding: 13px;
+        color: var(--hero_text);
+        height: 43px;
+        margin: 0 auto;
+        margin-top: 7px;
+    }
+
+    .partners {
+        height: 435px;
+    }
+
+    .grid_partners {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .partners-text {
+        font-size: 14px;
+        font-weight: 300;
+        font-family: var(--font-roboto);
+        color: var(--partners-text);
+    }
+
+    .partner{
+        margin: 0 auto;
+        margin-right: 30px;
+    }
+    .partner2{ 
+        padding-top: 30px;
+        margin: 0 auto;
+        margin-right: 30px;
+    }
+    .partner3{
+        margin: 0 auto;
+        margin-right: 30px;
+    }
+    .partner4{
+        margin: 0 auto;
+        margin-right: 30px;
+    }
+
+    .guides {
+        height: 400px;
+    }
+
+    .guide-container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 110px;
+        
+    }
+    
+    .holidays {
+        margin-top: 52px;
+        margin-bottom: 15px;
+    }
+
+    .love_us {
+        height: 200px;
+    }
+
+    .love_articles{
+        text-align: center;
+        display: flex;
+    }
+    
+    .footer_grid {
+        height: 200px;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 100px;
+    }
+
 }
